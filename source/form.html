@@ -46,12 +46,14 @@
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
         <div class="travel-contest__wrapper">
           <form class="travel-contest__form form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="form__label" for="surname">Фамилия:</label>
-            <input class="form__text-input" type="text" placeholder="Укажите фамилию*" id="surname">
-            <label class="form__label" for="name">Имя:</label>
-            <input class="form__text-input" type="text" placeholder="Введите ваше имя*" id="name">
-            <label class="form__label" for="patronymic">Отчество:</label>
-            <input class="form__text-input" type="text" placeholder="Ну и отчество тоже" id="patronymic">
+            <fieldset class="form__user-info">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__text-input" type="text" placeholder="Укажите фамилию*" id="surname">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__text-input" type="text" placeholder="Введите ваше имя*" id="name">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__text-input" type="text" placeholder="Ну и отчество тоже" id="patronymic">
+            </fieldset>
             <fieldset class="form__achievements">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__achievements-list form-list">
@@ -81,10 +83,12 @@
                 </li>
               </ul>
             </fieldset>
-            <label class="form__label" for="phone">Номер телефона:</label>
-            <input class="form__text-input" type="text" placeholder="Номер, пожалуйста" id="phone">
-            <label class="form__label" for="post-adress">Адрес почты:</label>
-            <input class="form__text-input" type="text" placeholder="Введите почту*" id="post-adress">
+            <fieldset class="form__user-info">
+              <label class="form__label" for="phone">Номер телефона:</label>
+              <input class="form__text-input" type="text" placeholder="Номер, пожалуйста" id="phone">
+              <label class="form__label" for="post-adress">Адрес почты:</label>
+              <input class="form__text-input" type="text" placeholder="Введите почту*" id="post-adress">
+            </fieldset>
             <fieldset class="form__application-versions">
               <legend class="form__legend">С каким приложением путешествовали?</legend>
               <ul class="form__application-versions-list form-list">
@@ -102,11 +106,13 @@
                 </li>
               </ul>
             </fieldset>
-            <label class="form__label" for="emotions">Опишите свои эмоции</label>
-            <textarea class="form__textarea" name="name" rows="8" cols="80" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <fieldset class="form__user-info">
+              <label class="form__label" for="emotions">Опишите свои эмоции</label>
+              <textarea class="form__textarea" name="name" rows="8" cols="80" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
             <button class="form__submit-button" type="submit" name="button">Отправить форму</button>
+            <small class="form__footnote">* — обязательные поля</small>
           </form>
-          <small class="form__footnote">* — обязательные поля</small>
         </div>
       </section>
     </main>
