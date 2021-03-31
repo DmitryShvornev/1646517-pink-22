@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Показать меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__site-list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <p class="page-main__lead">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="photos-feed">
+        <h2 class="visually-hidden">Лента фотографий</h2>
+        <ul class="photos-feed__list photos-list">
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/panorama.jpg" width="280" height="180" alt="Панорамная фотография горы">
+              <p class="feed-card__user-name">Анна<span class="feed-card__time">(5 минут назад)</span></p>
+              <p class="feed-card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="feed-card__likes">Нравится: 215</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/gopro.jpg" width="280" height="180" alt="Фотография машины и GoPro">
+              <p class="feed-card__user-name">Левон<span class="feed-card__time">(5 часов назад)</span></p>
+              <p class="feed-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="feed-card__likes">Нравится: 356</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/drums.jpg" width="280" height="180" alt="Фотография барабанной установки">
+              <p class="feed-card__user-name">Антон<span class="feed-card__time">(12 часов назад)</span></p>
+              <p class="feed-card__text">Соседи будут рады!</p>
+              <p class="feed-card__likes">Нравится: 666</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/sky.jpg" width="280" height="180" alt="Фотография неба">
+              <p class="feed-card__user-name">Борис<span class="feed-card__time">(20 часов назад)</span></p>
+              <p class="feed-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="feed-card__likes">Нравится: 215</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/fair.jpg" width="280" height="180" alt="Фотография кубанской ярмарки">
+              <p class="feed-card__user-name">Сергей<span class="feed-card__time">(25 часов назад)</span></p>
+              <p class="feed-card__text">Самая кубанская в мире!</p>
+              <p class="feed-card__likes">Нравится: 4</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/hill.jpg" width="280" height="180" alt="Фотография скалы">
+              <p class="feed-card__user-name">Максим<span class="feed-card__time">(40 часов назад)</span></p>
+              <p class="feed-card__text">Где снег-то?</p>
+              <p class="feed-card__likes">Нравится: 150</p>
+            </article>
+          </li>
+          <li class="photos-list__item">
+            <article class="photos-feed__card feed-card">
+              <img src="img/sunrise.jpg" width="280" height="180" alt="Фотография крыла самолета на фоне рассвета">
+              <p class="feed-card__user-name">Надежда<span class="feed-card__time">(45 часов назад)</span></p>
+              <p class="feed-card__text">Всем GM и взаимные лайки!</p>
+              <p class="feed-card__likes">Нравится: 2560</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <p class="page-main__lead">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <section class="photos-editor">
+        <form class="photos-editor__form" action="index.html" method="post">
+          <img src="img/photo-to-post.jpg" width="280" height="374" alt="Фотография для публикации">
+          <button type="submit" name="button">Запостить</button>
+          <button type="button" name="button">Отмена</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__socials socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">YouTube</a>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на лендинг интенсива по вёрстке сайтов от HTML Academy">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+          </svg>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
