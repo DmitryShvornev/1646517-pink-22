@@ -11,7 +11,7 @@
 }
 
 .benefits__list {
-  list-style: none;
+  @include list-reset;
   background-color: $lightgrey;
 }
 

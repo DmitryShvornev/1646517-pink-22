@@ -1,6 +1,23 @@
+.rates__table {
+  border-collapse: collapse;
+}
+
+.rates__feature-name {
+  border: 2px solid $special-lightgrey;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 214%;
+}
+
+.rates__feature-state {
+  border: 2px solid $special-lightgrey;
+}
+
 .rates__item {
   background-color: $darkblue;
   color: $white;
+  border: 2px solid $white;
+  border-radius: 1px 0 0 0;
 }
 
 .rates__title {

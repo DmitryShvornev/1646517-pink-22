@@ -1,9 +1,9 @@
 .site-list {
-  list-style: none;
+  @include list-reset;
 }
 
 .site-list__item {
-  //box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   outline: 1px $black;
   text-transform: uppercase;
   font-weight: 700;
@@ -11,17 +11,17 @@
   line-height: 32px;
   padding: 25px 117px;
   box-sizing: border-box;
+}
 
-  & a {
-    color: $white;
-  }
+.site-list__link {
+  color: $white;
+}
 
-  & a:hover {
-    color: $pink;
-  }
+.site-list__link:hover {
+  color: $pink;
+}
 
-  & a:active {
-    color: $pink;
-    opacity: 0.3;
-  }
+.site-list__link:active {
+  color: $pink;
+  opacity: 0.3;
 }

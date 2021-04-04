@@ -17,22 +17,22 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__site-list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
             </li>
@@ -46,9 +46,7 @@
         <div class="application__wrapper">
           <h2 class="visually-hidden">Pink в различных магазинах приложений</h2>
           <p class="application__slogan">Взгляните на жизнь иначе!</p>
-          <button class="application__button-download">
-              Скачать приложение
-          </button>
+          <a class="application__button-download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="application__shop-list shop-list">
             <li class="shop-list__item shop-list__item--app-store">
               <a href="https://www.apple.com/ru/app-store/">
@@ -115,13 +113,13 @@
           </div>
           <ul class="reviews__toggles slider-toggles">
             <li class="slider-toggles__item">
-              <button class="slider__toggle slider__toggle--current" type="button">Слайд 1</button>
+              <button class="slider__toggle slider__toggle--current" type="button" aria-label="Слайд 1"></button>
             </li>
             <li class="slider-toggles__item">
-              <button class="slider__toggle" type="button">Слайд 2</button>
+              <button class="slider__toggle" type="button" aria-label="Слайд 2"></button>
             </li>
             <li class="slider-toggles__item">
-              <button class="slider__toggle" type="button">Слайд 3</button>
+              <button class="slider__toggle" type="button" aria-label="Слайд 3"></button>
             </li>
           </ul>
         </div>
@@ -166,13 +164,13 @@
           </table>
           <ul class="rates__toggles slider-toggles">
             <li class="slider-toggles__item">
-              <button class="slider__toggle" type="button">Слайд 1</button>
+              <button class="slider__toggle" type="button" aria-label="Слайд 1"></button>
             </li>
             <li class="slider-toggles__item">
-              <button class="slider__toggle slider__toggle--current" type="button">Слайд 2</button>
+              <button class="slider__toggle slider__toggle--current" type="button" aria-label="Слайд 2"></button>
             </li>
             <li class="slider-toggles__item">
-              <button class="slider__toggle" type="button">Слайд 3</button>
+              <button class="slider__toggle" type="button" aria-label="Слайд 3"></button>
             </li>
           </ul>
         </div>
@@ -182,9 +180,9 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__promo">Остались вопросы? Свяжитесь с нами</p>
-        <p class="contacts__telephone">Звоните: <a href="tel:+78125556666">+7(812) 555-66-66</a></p>
-        <p class="contacts__email">Пишите: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p class="contacts__adress">Приезжайте в гости: <a>ул. Большая Конюшенная, 19/8</a></p>
+        <p class="contacts__telephone">Звоните: <a class="contacts__link" href="tel:+78125556666">+7(812) 555-66-66</a></p>
+        <p class="contacts__email">Пишите: <a class="contacts__link mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="contacts__adress">Приезжайте в гости: <a class="contacts__link">ул. Большая Конюшенная, 19/8</a></p>
       </section>
       <section class="page-footer__socials socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
