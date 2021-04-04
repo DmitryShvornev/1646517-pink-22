@@ -1,0 +1,53 @@
+.contacts__promo {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.contacts__telephone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contacts__telephone a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+}
+
+.contacts__email {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contacts__email a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+  &:hover {
+    text-decoration: underline;
+    color: $darkblue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
+.contacts__adress {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contacts__adress a {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+}

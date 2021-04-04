@@ -1,0 +1,23 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 25px 117px;
+  box-sizing: border-box;
+  & a {
+    color: $white;
+  }
+  & a:hover {
+    color: $pink;
+  }
+  & a:active {
+    color: $pink;
+    opacity: 0.3;
+  }
+}
