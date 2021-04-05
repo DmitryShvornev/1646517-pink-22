@@ -37,9 +37,5 @@
   ],
   "engines": {
     "node": "14.15.0"
-  },
-  "dependencies": {
-    "lazystream": "^1.0.0",
-    "readable-stream": "^2.3.7"
   }
 }
