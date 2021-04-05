@@ -15,15 +15,7 @@
   font-size: 24px;
   line-height: 33px;
   color: $pink;
-}
 
-.contacts__email {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.mail-link {
   &:hover {
     text-decoration: underline;
     color: $darkblue;
@@ -34,6 +26,13 @@
     text-decoration: none;
   }
 }
+
+.contacts__email {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 
 .contacts__adress {
   font-weight: 700;
