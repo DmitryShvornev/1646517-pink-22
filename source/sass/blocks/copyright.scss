@@ -1,0 +1,16 @@
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.copyright__link {
+  &:hover path {
+    fill: $darkblue;
+  }
+
+  &:active path {
+    fill: $darkblue;
+    opacity: 0.3;
+  }
+}
