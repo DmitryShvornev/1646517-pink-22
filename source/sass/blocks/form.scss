@@ -1,0 +1,78 @@
+.form__user-info {
+  @include fieldset-reset;
+}
+
+.form__achievements {
+  @include fieldset-reset;
+  background-color: $lightgrey;
+}
+
+.form__application-versions {
+  @include fieldset-reset;
+  background-color: $lightgrey;
+}
+
+.form__achievements-list {
+  @include list-reset;
+}
+
+.form__application-versions-list {
+  @include list-reset;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 214%;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form__text-input,
+.form__textarea {
+  border: 2px solid $special-lightgrey;
+  border-radius: 1px;
+  font-family: inherit;
+  padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: $darkblue;
+  }
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+  padding-top: 45px;
+}
+
+.form__submit-button {
+  background: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 23px 45px;
+}
+
+.form__footnote {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: $darkblue;
+  text-transform: uppercase;
+
+  sup {
+    color: $pink;
+  }
+}

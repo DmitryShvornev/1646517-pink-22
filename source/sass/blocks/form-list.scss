@@ -1,0 +1,55 @@
+.form-list__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $darkblue;
+  position: relative;
+  display: block;
+  padding-bottom: 69px;
+}
+
+.form-list__checkbox + .form-list__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $special-lightgrey;
+  background-color: $white;
+  border-radius: 1px;
+}
+
+.form-list__checkbox:checked + .form-list__label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form-list__radio + .form-list__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $special-lightgrey;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.form-list__radio:checked + .form-list__label::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
+}

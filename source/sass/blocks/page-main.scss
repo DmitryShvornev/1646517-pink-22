@@ -1,0 +1,20 @@
+.page-main__wrapper {
+  background-image: url("../img/back-mobile.jpg");
+  background-color: $darkblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-main__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $white;
+}
+
+.page-main__lead {
+  font-size: 14px;
+  line-height: 214%;
+  font-weight: 400;
+  color: $darkblue;
+}
