@@ -1,0 +1,48 @@
+.photos-editor {
+  background-color: $lightgrey;
+}
+
+.photos-editor__post {
+  display: inline-block;
+  color: $pink;
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 21px 90px;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $pink;
+    opacity: 0.3;
+  }
+}
+
+.photos-editor__cancel {
+  display: inline-block;
+  opacity: 0.1;
+  border: 3px solid $darkblue;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 21px 90px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    background-color: $darkblue;
+    color: $white;
+  }
+}

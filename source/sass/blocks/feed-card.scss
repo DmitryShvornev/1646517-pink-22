@@ -1,0 +1,33 @@
+.feed-card {
+  background-color: $lightgrey;
+}
+
+.feed-card__user-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: $darkblue;
+}
+
+.feed-card__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 200%;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.feed-card__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: $darkblue;
+}
+
+.feed-card__likes {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: $pink;
+}

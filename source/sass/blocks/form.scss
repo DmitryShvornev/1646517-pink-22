@@ -44,6 +44,10 @@
   }
 }
 
+.form__textarea {
+  resize: none;
+}
+
 .form__legend {
   font-size: 14px;
   line-height: 18px;

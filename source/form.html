@@ -96,15 +96,15 @@
               <legend class="form__legend">С каким приложением путешествовали?</legend>
               <ul class="form__application-versions-list form-list">
                 <li class="form-list__item">
-                  <input class="visually-hidden form-list__radio" type="radio" id="ios" checked>
+                  <input class="visually-hidden form-list__radio" type="radio" id="ios" name="application-version-toggle" checked>
                   <label class="form-list__label" for="ios">Pink для iOS</label>
                 </li>
                 <li class="form-list__item">
-                  <input class="visually-hidden form-list__radio" type="radio" id="android">
+                  <input class="visually-hidden form-list__radio" type="radio" id="android" name="application-version-toggle">
                   <label class="form-list__label" for="android">Pink для Android</label>
                 </li>
                 <li class="form-list__item">
-                  <input class="visually-hidden form-list__radio" type="radio" id="winphone">
+                  <input class="visually-hidden form-list__radio" type="radio" id="winphone" name="application-version-toggle">
                   <label class="form-list__label" for="winphone">Windows Phone</label>
                 </li>
               </ul>
@@ -113,7 +113,7 @@
               <label class="form__label" for="emotions">Опишите свои эмоции</label>
               <textarea class="form__textarea" name="name" rows="8" cols="80" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <button class="form__submit-button" type="submit" name="button">Отправить форму</button>
+            <button class="form__submit-button" type="submit">Отправить форму</button>
             <small class="form__footnote"><sup>*</sup> — обязательные поля</small>
           </form>
         </div>
