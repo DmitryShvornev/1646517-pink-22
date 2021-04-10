@@ -32,3 +32,22 @@ img {
   padding: 0;
   margin: 0;
 }
+
+@mixin wrapper-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@mixin wrapper-tablet {
+  max-width: $tablet-width;
+}
+
+@mixin wrapper-desktop {
+  max-width: $desktop-width;
+}

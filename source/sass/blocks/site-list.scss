@@ -9,8 +9,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  padding: 25px 117px;
-  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .site-list__link {

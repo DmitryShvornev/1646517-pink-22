@@ -1,11 +1,38 @@
+.reviews__wrapper {
+  @include wrapper-mobile;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author-name {
+  display: block;
+  padding-bottom: 31px;
   font-size: 18px;
   line-height: 167%;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-top: 51px;
+  }
 }
 
 .reviews__text {
   font-size: 14px;
   line-height: 214%;
+  margin: 0;
 }

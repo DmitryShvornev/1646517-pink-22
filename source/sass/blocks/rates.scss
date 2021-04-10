@@ -1,5 +1,28 @@
+.rates {
+  background-color: $lightgrey;
+  padding-top: 83px;
+  padding-bottom: 49px;
+}
+
+.rates__wrapper {
+  @include wrapper-mobile;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+  }
+}
+
 .rates__table {
   border-collapse: collapse;
+  margin-bottom: 45px;
+}
+
+.rates__feature {
+  background-color: $white;
 }
 
 .rates__feature-name {
@@ -7,10 +30,27 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 214%;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 20px;
 }
 
 .rates__feature-state {
   border: 2px solid $special-lightgrey;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  &--enabled {
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--disabled {
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .rates__item {

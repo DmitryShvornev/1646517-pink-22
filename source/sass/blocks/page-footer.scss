@@ -1,0 +1,10 @@
+.page-footer {
+  @include wrapper-mobile;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+}
