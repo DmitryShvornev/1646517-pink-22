@@ -1,13 +1,5 @@
 .reviews__wrapper {
-  @include wrapper-mobile;
-
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-  }
+  @include wrapper;
   padding-bottom: 60px;
   padding-top: 50px;
 }

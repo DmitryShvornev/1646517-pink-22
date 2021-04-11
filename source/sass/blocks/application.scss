@@ -10,15 +10,7 @@
 }
 
 .application__wrapper {
-  @include wrapper-mobile;
-
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-  }
+  @include wrapper;
 }
 
 .application__slogan {

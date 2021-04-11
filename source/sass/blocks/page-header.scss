@@ -1,19 +1,13 @@
 .page-header {
   background-color: $darkblue;
   color: $white;
-
-  @include wrapper-mobile;
-
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-  }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
   align-self: flex-start;
   padding-top: 23px;
+  padding-left: 20px;
 }

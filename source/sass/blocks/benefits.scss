@@ -1,14 +1,9 @@
 .benefits__wrapper {
-  @include wrapper-mobile;
+  @include wrapper;
 
   @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
   }
   padding-top: 46px;
 }

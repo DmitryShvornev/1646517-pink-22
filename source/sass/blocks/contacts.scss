@@ -50,6 +50,11 @@
     grid-column: 1 / 2;
     margin-top: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin-top: 61px;
+  }
 }
 
 .contacts__link {

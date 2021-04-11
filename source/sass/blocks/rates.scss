@@ -5,20 +5,13 @@
 }
 
 .rates__wrapper {
-  @include wrapper-mobile;
-
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-  }
+  @include wrapper;
 }
 
 .rates__table {
   border-collapse: collapse;
   margin-bottom: 45px;
+  width: 100%;
 }
 
 .rates__feature {
