@@ -1,0 +1,12 @@
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__toggle {
+  align-self: flex-end;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

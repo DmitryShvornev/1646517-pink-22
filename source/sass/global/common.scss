@@ -21,6 +21,10 @@ img {
   object-fit: cover;
 }
 
+body {
+  box-sizing: border-box;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

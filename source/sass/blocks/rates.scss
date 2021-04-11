@@ -8,10 +8,20 @@
   @include wrapper;
 }
 
+.rates__table-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .rates__table {
   border-collapse: collapse;
   margin-bottom: 45px;
   width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    width: 840px;
+    transform: translateX(-280px);
+  }
 }
 
 .rates__feature {
@@ -51,6 +61,11 @@
   color: $white;
   border: 2px solid $white;
   border-radius: 1px 0 0 0;
+  width: 153px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
 }
 
 .rates__title {

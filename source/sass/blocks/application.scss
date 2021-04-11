@@ -9,6 +9,21 @@
   box-sizing: border-box;
 }
 
+.application__text {
+  width: 280px;
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+    width: 300px;
+  }
+}
+
 .application__wrapper {
   @include wrapper;
 }
