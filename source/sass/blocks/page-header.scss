@@ -1,10 +1,9 @@
 .page-header {
-  background-color: $darkblue;
   color: $white;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: -66px;
+  background-color: transparentize($black, 0.7);
+  background-size: cover;
 }
 
 .page-header__logo {

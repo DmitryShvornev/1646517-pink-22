@@ -6,6 +6,8 @@
 
 .rates__wrapper {
   @include wrapper;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .rates__table-wrapper {
@@ -19,8 +21,9 @@
   width: 100%;
 
   @media (max-width: $mobile-width-only) {
-    width: 840px;
-    transform: translateX(-280px);
+    width: 282%;
+    position: relative;
+    left:-92%;
   }
 }
 
@@ -36,6 +39,10 @@
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 20px;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
 }
 
 .rates__feature-state {

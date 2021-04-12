@@ -7,6 +7,10 @@
   padding-top: 29px;
   padding-bottom: 38px;
   box-sizing: border-box;
+  margin-top: -66px;
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
 }
 
 .application__text {
