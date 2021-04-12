@@ -1,4 +1,13 @@
 .page-header {
-  background-color: $darkblue;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  background-color: transparentize($black, 0.7);
+  position: relative;
+  z-index: 2;
+}
+
+.page-header__logo {
+  align-self: flex-start;
+  padding-left: 20px;
 }

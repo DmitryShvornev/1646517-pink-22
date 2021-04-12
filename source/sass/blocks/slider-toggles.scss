@@ -1,3 +1,11 @@
 .slider-toggles {
   @include list-reset;
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

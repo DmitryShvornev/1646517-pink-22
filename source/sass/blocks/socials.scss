@@ -1,3 +1,26 @@
 .socials__list {
   @include list-reset;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.socials__link {
+  display: block;
+  border: 3px solid $lightgrey;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.socials__link--twitter .socials__icon {
+  padding: 17px 15px;
+}
+
+.socials__link--facebook .socials__icon {
+  padding: 15px 20px;
+}
+
+.socials__link--youtube .socials__icon {
+  padding: 18px 18px;
 }

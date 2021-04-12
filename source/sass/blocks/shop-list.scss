@@ -1,3 +1,14 @@
 .shop-list {
   @include list-reset;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    width: 300px;
+  }
 }

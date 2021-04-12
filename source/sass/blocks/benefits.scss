@@ -1,18 +1,59 @@
+.benefits {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  background-color: $white;
+}
+
+.benefits__wrapper {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  padding-top: 46px;
+}
+
 .benefits__lead {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .benefits__promo {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  margin: 0;
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
 }
 
 .benefits__list {
   @include list-reset;
   background-color: $lightgrey;
+  padding-top: 123px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .benefits__title {
@@ -24,4 +65,6 @@
 .benefits__description {
   font-size: 14px;
   line-height: 171%;
+  padding-left: 20px;
+  padding-right: 20px;
 }

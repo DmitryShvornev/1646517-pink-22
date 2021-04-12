@@ -1,0 +1,17 @@
+.page-footer {
+  @include wrapper;
+  background-color: $white;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+}
+
+.page-footer__map {
+  padding-bottom: 39px;
+  border: none;
+  width: 100%;
+}
