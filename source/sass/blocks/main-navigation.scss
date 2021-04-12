@@ -1,6 +1,7 @@
 .main-navigation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
     width: 1200px;

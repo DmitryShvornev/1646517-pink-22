@@ -1,5 +1,6 @@
 .page-footer {
   @include wrapper;
+  background-color: $white;
 }
 
 .page-footer__copyright {
