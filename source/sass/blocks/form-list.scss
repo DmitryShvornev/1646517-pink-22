@@ -1,3 +1,16 @@
+.form-list__item {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.form-list__item--achievements .form-list__label {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 47px;
+    width: 200px;
+  }
+}
+
 .form-list__label {
   font-weight: 400;
   font-size: 18px;
@@ -6,12 +19,13 @@
   position: relative;
   display: block;
   padding-bottom: 69px;
+  text-align: left;
 }
 
 .form-list__checkbox + .form-list__label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -55px;
   top: 0;
   width: 35px;
   height: 35px;
@@ -24,7 +38,7 @@
   content: "";
   position: absolute;
   top: 12px;
-  left: 9px;
+  left: -46px;
   width: 22px;
   height: 16px;
   background-image: url("../img/tick.svg");
@@ -34,7 +48,7 @@
 .form-list__radio + .form-list__label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -71px;
   top: 0;
   width: 37px;
   height: 37px;
@@ -46,7 +60,7 @@
 .form-list__radio:checked + .form-list__label::after {
   content: "";
   position: absolute;
-  left: 13px;
+  left: -58px;
   top: 13px;
   width: 15px;
   height: 15px;
