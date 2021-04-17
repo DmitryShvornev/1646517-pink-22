@@ -8,15 +8,13 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-navigation">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
+        </a>
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Показать меню</span>
         </button>
         <ul class="main-navigation__site-list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Логотип приложения Pink">
-            </a>
-          </li>
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
               Главная
@@ -94,13 +92,15 @@
           </fieldset>
           <fieldset class="form__user-info form__user-info--contacts">
             <legend class="form__legend-hidden">Контактная информация</legend>
-            <div class="form__user-info-wrapper form__user-info-wrapper--contacts">
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__text-input" type="text" placeholder="Номер, пожалуйста" id="phone" name="phone">
-            </div>
-            <div class="form__user-info-wrapper form__user-info-wrapper--contacts">
-              <label class="form__label" for="post-adress">Адрес почты</label>
-              <input class="form__text-input" type="text" placeholder="Введите почту*" id="post-adress" name="post-adress">
+            <div class="form__pre-wrapper">
+              <div class="form__user-info-wrapper form__user-info-wrapper--contacts">
+                <label class="form__label" for="phone">Номер телефона</label>
+                <input class="form__text-input" type="text" placeholder="Номер, пожалуйста" id="phone" name="phone">
+              </div>
+              <div class="form__user-info-wrapper form__user-info-wrapper--contacts">
+                <label class="form__label" for="post-adress">Адрес почты</label>
+                <input class="form__text-input" type="text" placeholder="Введите почту*" id="post-adress" name="post-adress">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__application-versions">

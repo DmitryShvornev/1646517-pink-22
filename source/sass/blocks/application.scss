@@ -3,6 +3,7 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   color: $white;
   padding-top: 29px;
   padding-bottom: 38px;
@@ -31,6 +32,7 @@
 
 .application__wrapper {
   @include wrapper;
+  align-items: flex-start;
 }
 
 .application__slogan {
@@ -44,10 +46,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-  }
 }
 
 .application__button-download {
@@ -79,20 +77,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
     width: 300px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .application {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background-image: url("../img/back-tablet.jpg");
   }
 
   .application__slogan {
-    grid-column: 1 / 2;
     font-size: 40px;
     line-height: 120%;
     width: 300px;
@@ -102,15 +96,12 @@
 
 @media (min-width: $desktop-width) {
   .application {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     background-image: url("../img/back-desktop.jpg");
   }
 
   .application__slogan {
     font-size: 50px;
     line-height: 68px;
-    grid-column: 1 / 2;
     width: 300px;
     padding-bottom: 51px;
   }
