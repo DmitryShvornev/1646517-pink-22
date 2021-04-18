@@ -24,7 +24,7 @@
     margin-top: 0;
 
     @media (min-width: $desktop-width) {
-      margin-top: 6px;
+      padding-bottom: 0;
     }
   }
 
@@ -101,12 +101,12 @@
 .form__user-info-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 29px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: baseline;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
   }
 
   &--contacts {
@@ -117,14 +117,18 @@
 
   &--contacts:first-of-type {
     @media (min-width: $desktop-width) {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
   &--contacts:last-of-type {
     @media (min-width: $tablet-width) {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
   &--emotions {
@@ -231,10 +235,12 @@
 
 .form__application-versions-list {
   @include list-reset;
-  padding-top: 52px;
+  padding-top: 40px;
+  padding-bottom: 54px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 61px;
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 }
 
@@ -319,6 +325,9 @@
 }
 
 .form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

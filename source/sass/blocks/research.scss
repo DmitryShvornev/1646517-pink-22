@@ -1,6 +1,4 @@
 .research {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding-top: 102px;
 
   @media (max-width: $mobile-width-only) {
@@ -8,11 +6,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
     background-color: $lightgrey;
     padding-top: 115px;
     padding-bottom: 120px;
+  }
+}
+
+.research__pre-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 

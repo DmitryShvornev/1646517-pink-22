@@ -4,9 +4,20 @@
   }
 }
 
+.form-list__item--achievements {
+  margin-bottom: 47px;
+}
+
+.form-list__item--app-versions {
+  margin-bottom: 50px;
+}
+
+.form-list__item--app-versions:last-child {
+  margin-bottom: 0;
+}
+
 .form-list__item--achievements .form-list__label {
   @media (min-width: $desktop-width) {
-    padding-bottom: 47px;
     width: 200px;
   }
 }
@@ -18,12 +29,7 @@
   color: $darkblue;
   position: relative;
   display: block;
-  padding-bottom: 69px;
   text-align: left;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 62px;
-  }
 }
 
 .form-list__checkbox + .form-list__label::before {
