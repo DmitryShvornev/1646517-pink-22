@@ -2,11 +2,6 @@
   background-color: $lightgrey;
   padding-top: 83px;
   padding-bottom: 49px;
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 .rates__wrapper {

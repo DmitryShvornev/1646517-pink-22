@@ -1,6 +1,15 @@
 .page-footer {
   @include wrapper;
   background-color: $white;
+  padding-top: 57px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .page-footer__copyright {
