@@ -12,6 +12,35 @@
   }
 }
 
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer--inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-container {
+  padding-bottom: 41px;
+}
+
+.page-footer-inner .page-footer__logo-container {
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   flex-direction: row;
