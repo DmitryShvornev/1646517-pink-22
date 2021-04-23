@@ -90,6 +90,7 @@
 .editor-form__label {
   position: absolute;
   text-align: left;
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
