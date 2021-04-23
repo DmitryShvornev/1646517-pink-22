@@ -4,6 +4,24 @@
   }
 }
 
+.editor-form__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  padding-top: 42px;
+  padding-left: 37px;
+  padding-right: 49px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.editor-form__button {
+  border: none;
+}
+
 .editor-form__controls {
   display: flex;
   flex-direction: column;
@@ -18,8 +36,13 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-top: 107px;
   }
 }
 
@@ -31,20 +54,48 @@
   width: 320px;
   padding-left: 40px;
   padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 275px;
+    padding-left: 4px;
+    padding-right: 18px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   &--fill,
-  &--shadow {
+  &--contrast {
     @media (max-width: $mobile-width-only) {
       display: none;
     }
+  }
+
+  &--contrast {
+    @media (min-width: $desktop-width) {
+      border-bottom: none;
+    }
+  }
+}
+
+.editor-form__label {
+  position: absolute;
+  text-align: left;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 92px;
   }
 }
 
@@ -55,10 +106,12 @@
 
   @media (min-width: $tablet-width) {
     width: 202px;
+    margin-left: 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 288px;
+    margin-left: 92px;
   }
 }
 
@@ -69,6 +122,29 @@
   background: $white;
   border: 2px solid $pink;
   position: absolute;
-  top: 36px;
+  top: 37px;
   left: 193px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+  }
+}
+
+
+.editor-form__icon-small {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.editor-form__icon-big {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
