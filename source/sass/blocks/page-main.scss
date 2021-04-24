@@ -33,6 +33,18 @@
   }
 }
 
+.page-main__wrapper--catalog {
+  padding-bottom: 84px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 104px;
+  }
+}
+
 .page-main__title {
   font-weight: 300;
   font-size: 24px;
@@ -89,6 +101,18 @@
     width: 756px;
     padding-top: 100px;
     padding-bottom: 95px;
+  }
+}
+
+.page-main__lead--catalog {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
   }
 }
 

@@ -1,5 +1,20 @@
 .feed-card {
-  background-color: $lightgrey;
+  padding-bottom: 26px;
+  padding-left: 17px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.feed-card--wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .feed-card__user-name {
@@ -30,4 +45,41 @@
   line-height: 200%;
   text-transform: uppercase;
   color: $pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.feed-card__likes-hidden {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: $pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.feed-card__likes--panorama {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.feed-card__likes-icon {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
