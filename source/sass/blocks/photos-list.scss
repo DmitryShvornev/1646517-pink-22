@@ -37,3 +37,11 @@
     width: 940px;
   }
 }
+
+.photos-list__item--panorama .photos-list__picture {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
+}

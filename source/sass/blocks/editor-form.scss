@@ -48,10 +48,10 @@
 
 .editor-form__wrapper {
   position: relative;
-  padding-top: 43px;
-  padding-bottom: 34px;
   border-bottom: transparentize($darkblue, 0.9) solid 1px;
   width: 320px;
+  padding-top: 43px;
+  padding-bottom: 34px;
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -63,14 +63,12 @@
     width: 275px;
     padding-left: 4px;
     padding-right: 18px;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
-    padding-top: 34px;
-    padding-bottom: 34px;
   }
 
   &--fill,
@@ -88,14 +86,16 @@
 }
 
 .editor-form__label {
-  position: absolute;
   text-align: left;
+  height: 72px;
+  padding-top: 27px;
 
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 14px;
     width: 92px;
   }
 }
@@ -107,12 +107,10 @@
 
   @media (min-width: $tablet-width) {
     width: 202px;
-    margin-left: 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 288px;
-    margin-left: 92px;
   }
 }
 
@@ -136,16 +134,21 @@
 }
 
 
-.editor-form__icon-small {
+.editor-form__icon {
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
 
-.editor-form__icon-big {
-  display: none;
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
 
-  @media (min-width: $desktop-width) {
-    display: block;
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

@@ -10,8 +10,8 @@
 }
 
 .main-navigation__toggle {
-  align-self: flex-end;
-
+  width: 50px;
+  height: 24px;
   @media (min-width: $desktop-width) {
     display: none;
   }
