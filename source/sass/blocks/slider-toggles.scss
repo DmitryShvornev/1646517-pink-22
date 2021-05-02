@@ -5,7 +5,15 @@
   gap: 19px;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  &--rates {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }

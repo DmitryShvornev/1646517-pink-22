@@ -1,7 +1,16 @@
 .reviews {
+  @media (min-width: $tablet-width) {
+    padding-top: 108px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1200px;
     margin: 0 auto;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 58px;
+    margin-top: 72px;
   }
   background-color: $white;
 }
@@ -10,6 +19,15 @@
   @include wrapper;
   padding-bottom: 60px;
   padding-top: 50px;
+}
+
+.reviews__item {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 126px;
+    padding-right: 126px;
+  }
 }
 
 .reviews__author-info {

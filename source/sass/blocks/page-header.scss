@@ -11,8 +11,53 @@
   }
 }
 
+.page-header--closed-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--no-js {
+  background-color: $darkblue;
+}
+
 .page-header__logo {
   align-self: flex-start;
   padding-left: 20px;
-  padding-top: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  & svg:first-child {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  & svg:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  & svg:nth-child(3) {
+    @media (max-width: $no-desktop) {
+      display: none;
+    }
+  }
+
+  &:hover path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: $white;
+    opacity: 0.3;
+  }
 }

@@ -2,10 +2,24 @@
   padding-bottom: 26px;
   padding-left: 17px;
   padding-right: 10px;
+  background-color: $lightgrey;
+  width: 280px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    width: 300px;
+  }
+
+  &--panorama {
+    @media (min-width: $tablet-width) {
+      width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+    }
   }
 }
 

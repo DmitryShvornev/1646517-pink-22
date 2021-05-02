@@ -7,11 +7,51 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover {
+    background-color: $darkblue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: $darkblue;
+    opacity: 0.1;
+  }
+
   &--current {
     background-color: $white;
     width: 9px;
     height: 9px;
     border: 3px solid $darkblue;
     opacity: 1;
+  }
+}
+
+.slider__arrows {
+  position: relative;
+
+  @media (max-width: $no-desktop) {
+    display: none;
+  }
+}
+
+.slider_arrow {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: none;
+  border: none;
+
+  &:nth-child(2) {
+    left: 940px;
+  }
+
+  &:hover path {
+    fill: $darkblue;
+    opacity: 0.6;
+  }
+
+  &:active path {
+    fill: $darkblue;
+    opacity: 0.1;
   }
 }

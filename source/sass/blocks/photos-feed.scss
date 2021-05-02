@@ -1,17 +1,9 @@
 .photos-feed {
   display: flex;
   flex-direction: column;
-
-  // @media (min-width: $desktop-width) {
-  //   width: 1200px;
-  //   margin: 0 auto;
-  //   padding-left: 130px;
-  //   padding-right: 130px;
-  // }
 }
 
 .photos-feed__list {
   @include list-reset;
   text-align: left;
-  align-self: center;
 }
