@@ -60,4 +60,17 @@
   @media (min-width: $desktop-width) {
     width: 495px;
   }
+
+  &:hover {
+    background: $special-green;
+  }
+
+  &:active {
+    background: $special-green;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background: $special-lightgrey;
+  }
 }

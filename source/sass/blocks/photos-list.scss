@@ -20,6 +20,16 @@
 .photos-list__item {
   margin-bottom: 20px;
   background-color: $lightgrey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 555px;
+  }
 }
 
 .photos-list__item--panorama {

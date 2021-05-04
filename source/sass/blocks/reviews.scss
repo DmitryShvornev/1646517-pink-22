@@ -1,4 +1,6 @@
 .reviews {
+  position: relative;
+  z-index: 1;
   @media (min-width: $tablet-width) {
     padding-top: 108px;
   }

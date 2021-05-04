@@ -5,8 +5,6 @@
   background-position: top center;
   background-size: cover;
   color: $white;
-  padding-top: 29px;
-  padding-bottom: 38px;
   box-sizing: border-box;
   margin-top: -70px;
 
@@ -16,36 +14,76 @@
 }
 
 .application__text {
-  width: 280px;
-  padding-top: 29px;
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkblue;
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 102px;
     width: 300px;
+    padding-bottom: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 116px;
     width: 300px;
+    padding-bottom: 130px;
   }
 }
 
 .application__wrapper {
   @include wrapper;
-  align-items: flex-start;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
+}
+
+.application__image {
+  // temporary
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .application__slogan {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  padding-bottom: 348px;
+  margin-top: 70px;
+  padding-top: 29px;
+  width: 280px;
+  margin-bottom: 0;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    margin-top: 115px;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+    margin-top: 115px;
+    padding-bottom: 51px;
+  }
 }
 
 .application__promo {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .application__button-download {
@@ -88,9 +126,8 @@
 
   .application__slogan {
     font-size: 40px;
-    line-height: 120%;
-    width: 300px;
-    padding-bottom: 39px;
+    line-height: 48px;
+    width: 280px;
   }
 }
 
@@ -103,6 +140,5 @@
     font-size: 50px;
     line-height: 68px;
     width: 300px;
-    padding-bottom: 51px;
   }
 }

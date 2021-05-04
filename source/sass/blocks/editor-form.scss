@@ -131,10 +131,24 @@
   @media (min-width: $desktop-width) {
     top: 30px;
   }
+
+  &:active {
+    background: $pink;
+  }
 }
 
 
 .editor-form__icon {
+  &:hover path {
+    fill: $darkblue;
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $darkblue;
+    opacity: 0.5;
+  }
+
   @media (min-width: $desktop-width) {
     &--crop {
       width: 44px;

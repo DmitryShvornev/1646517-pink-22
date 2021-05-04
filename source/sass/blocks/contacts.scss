@@ -4,14 +4,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 97px;
+    //grid-gap: 97px;
     width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 180px;
+    //grid-gap: 180px;
     width: $desktop-width;
   }
 }
@@ -87,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    grid-column: 3 / -1;
     margin-top: 61px;
   }
 }
@@ -106,7 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 3 / -1;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     margin-top: 61px;
   }
 }

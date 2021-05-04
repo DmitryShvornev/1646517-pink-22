@@ -12,11 +12,22 @@
   }
 }
 
+.research__image {
+  grid-column: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
+}
+
 .research__pre-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
 
   @media (min-width: $desktop-width) {
+    padding-left: 130px;
     width: 1200px;
     margin: 0 auto;
   }
