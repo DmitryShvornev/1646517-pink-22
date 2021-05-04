@@ -1,15 +1,17 @@
 .promo {
   padding-top: 46px;
-  padding-bottom: 70px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
-    padding-bottom: 47px;
+    width: 588px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 75px;
     padding-bottom: 66px;
+    width: 780px;
   }
 }
 

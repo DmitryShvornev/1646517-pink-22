@@ -11,6 +11,14 @@
   border-radius: 50%;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    border: 3px solid $black;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .socials__link--twitter {
