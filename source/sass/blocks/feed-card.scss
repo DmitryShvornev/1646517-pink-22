@@ -16,6 +16,7 @@
 
   &--panorama {
     margin: auto;
+
     @media (min-width: $tablet-width) {
       width: 620px;
     }
