@@ -28,10 +28,22 @@
     text-transform: capitalize;
     font-weight: 400;
     box-shadow: none;
+
+    &--active .site-list__link::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 109px;
+      height: 2px;
+      background-color: $white;
+    }
   }
 }
 
 .site-list__link {
+  position: relative;
   color: $white;
 }
 
