@@ -3,6 +3,11 @@
   flex-direction: column;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) and (max-width: $no-desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,12 +63,12 @@
 
 .form__user-info--contacts {
   box-sizing: border-box;
-  padding-top: 42px;
 
   @media (min-width: $tablet-width) {
     order: 2;
     padding-left: 82px;
     padding-right: 82px;
+    padding-top: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +76,7 @@
     width: 936px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 42px;
   }
 }
 
@@ -110,6 +116,12 @@
   }
 
   &--contacts {
+    @media (max-width: $mobile-width-only) {
+      width: 276px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     @media (min-width: $tablet-width) {
       flex-direction: column;
     }
@@ -136,6 +148,43 @@
   }
 }
 
+.form__text-input-wrapper {
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 59px;
+      height: 59px;
+      background-color: $special-lightgrey;
+    }
+  }
+
+  &--phone::after {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--post::after {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/mail-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
 .form__user-info-wrapper--contacts .form__label {
   @media (min-width: $tablet-width) {
     order: 2;
@@ -144,6 +193,8 @@
 }
 
 .form__user-info-wrapper--contacts .form__text-input {
+  margin-left: 0;
+
   @media (min-width: $desktop-width) {
     width: 371px;
   }
@@ -157,6 +208,7 @@
 
 .form__user-info-wrapper--contacts:nth-of-type(2) {
   @media (min-width: $desktop-width) {
+    margin-left: 54px;
     grid-column: 2 / 3;
   }
 }
@@ -287,6 +339,7 @@
 
 .form__text-input {
   width: 276px;
+  height: 59px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
