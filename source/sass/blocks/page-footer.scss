@@ -23,6 +23,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +49,11 @@
     padding-left: 130px;
     padding-right: 130px;
   }
+
+  @media (min-width: $tablet-width) and (max-width: $no-desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .page-footer__logo-container {
@@ -64,14 +71,14 @@
     fill: $darkblue;
   }
 
-  & svg:nth-child(1),
-  & svg:nth-child(2) {
+  & .page-footer__image,
+  & .page-footer__logo {
     @media (min-width: $desktop-width) {
       display: none;
     }
   }
 
-  & svg:nth-child(3) {
+  & .page-footer__logo-fancy {
     @media (max-width: $no-desktop) {
       display: none;
     }
