@@ -35,6 +35,34 @@
 .photos-list__item--panorama {
   width: 100%;
   background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-left: 19px;
+    padding-right: 20px;
+    padding-top: 5px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
 }
 
 .photos-list__picture {
