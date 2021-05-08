@@ -47,9 +47,11 @@
 }
 
 .benefits__item-wrapper {
-  position: relative;
-  background-color: $lightgrey;
-  width: 300px;
+  @media (min-width: $desktop-width) {
+    position: relative;
+    background-color: $lightgrey;
+    width: 300px;
+  }
 }
 
 .benefits__item-image-wrapper {
