@@ -29,7 +29,7 @@
     padding-bottom: 43px;
   }
 
-  & svg:first-child {
+  & .page-header__logo-glasses {
     @media (max-width: $mobile-width-only) {
       display: none;
     }
@@ -39,13 +39,13 @@
     }
   }
 
-  & svg:nth-child(2) {
+  & .page-header__logo-image {
     @media (min-width: $desktop-width) {
       display: none;
     }
   }
 
-  & svg:nth-child(3) {
+  & .page-header__logo-fancy {
     @media (max-width: $no-desktop) {
       display: none;
     }
