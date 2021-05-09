@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 122px;
+    height: 133px;
     background-image: linear-gradient(175deg, $white 50%, $lightgrey 50%);
   }
 }
@@ -51,18 +51,38 @@
     position: relative;
     background-color: $lightgrey;
     width: 300px;
-  }
-}
+    padding-top: 290px;
 
-.benefits__item-image-wrapper {
-  @media (max-width: $no-desktop) {
-    display: none;
-  }
-  z-index: -1;
-}
+    &--mood {
+      background-image: url("../img/phone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top center;
 
-.benefits__item-image {
-  margin-bottom: -81px;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-screen-1-desktop@2x.png");
+      }
+    }
+
+    &--world {
+      background-image: url("../img/phone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-screen-2-desktop@2x.png");
+      }
+    }
+
+    &--friends {
+      background-image: url("../img/phone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-screen-3-desktop@2x.png");
+      }
+    }
+  }
 }
 
 .benefits__title {
