@@ -85,6 +85,18 @@
   }
 }
 
+.page-footer__logo {
+  fill: $darkblue;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer-inner .page-footer__logo-container {
   padding-bottom: 41px;
 
