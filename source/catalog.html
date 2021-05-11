@@ -77,7 +77,13 @@
         <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photos-feed__list photos-list">
           <li class="photos-list__item photos-list__item--panorama">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture photos-list__picture--panorama" src="img/panorama.jpg" width="280" height="180" alt="Панорамная фотография горы"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="photos-list__picture photos-list__picture--panorama" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" width="320" height="137" alt="Панорамная фотография горы">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card feed-card--panorama">
               <div class="feed-card--wrapper">
                 <p class="feed-card__user-name">Анна<span class="feed-card__time"> (5 минут назад)</span></p>
@@ -98,7 +104,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/gopro.jpg" width="280" height="180" alt="Фотография машины и GoPro"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/gopro-desktop.jpg 1x, img/gopro-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/gopro-tablet.jpg 1x, img/gopro-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/gopro.jpg" srcset="img/gopro@2x.jpg 2x" width="300" height="180" alt="Фотография машины и GoPro">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Левон<span class="feed-card__time"> (5 часов назад)</span></p>
               <p class="feed-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -111,7 +123,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/drums.jpg" width="280" height="180" alt="Фотография барабанной установки"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/drums.jpg" srcset="img/drums@2x.jpg 2x" width="300" height="180" alt="Фотография барабанной установки">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Антон<span class="feed-card__time"> (12 часов назад)</span></p>
               <p class="feed-card__text">Соседи будут рады!</p>
@@ -124,7 +142,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/sky.jpg" width="280" height="180" alt="Фотография неба"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sky-desktop.jpg 1x, img/sky-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/sky-tablet.jpg 1x, img/sky-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/sky.jpg" srcset="img/sky@2x.jpg 2x" width="300" height="180" alt="Фотография неба">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Борис<span class="feed-card__time"> (20 часов назад)</span></p>
               <p class="feed-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -137,7 +161,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/fair.jpg" width="280" height="180" alt="Фотография кубанской ярмарки"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/fair-desktop.jpg 1x, img/fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/fair-tablet.jpg 1x, img/fair-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/fair.jpg" srcset="img/fair@2x.jpg 2x" width="300" height="180" alt="Фотография кубанской ярмарки">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Сергей<span class="feed-card__time"> (25 часов назад)</span></p>
               <p class="feed-card__text">Самая кубанская в мире!</p>
@@ -150,7 +180,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/hill.jpg" width="280" height="180" alt="Фотография скалы"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/hill-desktop.jpg 1x, img/hill-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/hill-tablet.jpg 1x, img/hill-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/hill.jpg" srcset="img/hill@2x.jpg 2x" width="300" height="180" alt="Фотография скалы">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Максим<span class="feed-card__time"> (40 часов назад)</span></p>
               <p class="feed-card__text">Где снег-то?</p>
@@ -163,7 +199,13 @@
             </article>
           </li>
           <li class="photos-list__item">
-            <a class="photos-list__link" href="#"><img class="photos-list__picture" src="img/sunrise.jpg" width="280" height="180" alt="Фотография крыла самолета на фоне рассвета"></a>
+            <a class="photos-list__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/sunrise-desktop.jpg 1x, img/sunrise-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/sunrise-tablet.jpg 1x, img/sunrise-tablet@2x.jpg 2x">
+                <img class="photos-list__picture" src="img/sunrise.jpg" srcset="img/sunrise@2x.jpg 2x" width="300" height="180" alt="Фотография крыла самолета на фоне рассвета">
+              </picture>
+            </a>
             <article class="photos-feed__card feed-card">
               <p class="feed-card__user-name">Надежда<span class="feed-card__time"> (45 часов назад)</span></p>
               <p class="feed-card__text">Всем GM и взаимные лайки!</p>
@@ -181,7 +223,12 @@
       <section class="photos-editor">
         <form class="photos-editor__form editor-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="editor-form__image-wrapper">
-            <a href="#"><img src="img/photo-to-post.jpg" width="280" height="374" alt="Фотография для публикации"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-to-post-tablet.jpg 1x, img/photo-to-post-tablet@2x.jpg 2x">
+                <img src="img/photo-to-post.jpg" srcset="img/photo-to-post.jpg 2x" width="300" height="374" alt="Фотография для публикации">
+              </picture>
+            </a>
           </div>
           <div class="editor-form__buttons">
             <button class="editor-form__button" type="button" name="crop">

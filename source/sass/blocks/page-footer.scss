@@ -115,7 +115,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 123px;
+    height: 160px;
     background-image: url("../img/triangle-footer.svg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -125,4 +125,5 @@
 
 .page-footer__map-display {
   width: 100%;
+  outline: none;
 }
