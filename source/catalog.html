@@ -6,6 +6,9 @@
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/152.png">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -79,13 +82,16 @@
           <li class="photos-list__item photos-list__item--panorama">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama.webp 1x, img/panorama@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                 <img class="photos-list__picture photos-list__picture--panorama" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" width="320" height="137" alt="Панорамная фотография горы">
               </picture>
             </a>
             <article class="photos-feed__card feed-card feed-card--panorama">
-              <div class="feed-card--wrapper">
+              <div class="feed-card__wrapper">
                 <p class="feed-card__user-name">Анна<span class="feed-card__time"> (5 минут назад)</span></p>
                 <p class="feed-card__likes-hidden">
                   <svg class="feed-card__likes-icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,6 +112,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gopro-desktop.webp 1x, img/gopro-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/gopro-tablet.webp 1x, img/gopro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gopro.webp 1x, img/gopro@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gopro-desktop.jpg 1x, img/gopro-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/gopro-tablet.jpg 1x, img/gopro-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/gopro.jpg" srcset="img/gopro@2x.jpg 2x" width="300" height="180" alt="Фотография машины и GoPro">
@@ -125,6 +134,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/drums-desktop.webp 1x, img/drums-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/drums-tablet.webp 1x, img/drums-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/drums.webp 1x, img/drums@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/drums.jpg" srcset="img/drums@2x.jpg 2x" width="300" height="180" alt="Фотография барабанной установки">
@@ -144,6 +156,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/sky-desktop.webp 1x, img/sky-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/sky-tablet.webp 1x, img/sky-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/sky.webp 1x, img/sky@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/sky-desktop.jpg 1x, img/sky-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/sky-tablet.jpg 1x, img/sky-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/sky.jpg" srcset="img/sky@2x.jpg 2x" width="300" height="180" alt="Фотография неба">
@@ -163,6 +178,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/fair-desktop.webp 1x, img/fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/fair-tablet.webp 1x, img/fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/fair.webp 1x, img/fair@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/fair-desktop.jpg 1x, img/fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/fair-tablet.jpg 1x, img/fair-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/fair.jpg" srcset="img/fair@2x.jpg 2x" width="300" height="180" alt="Фотография кубанской ярмарки">
@@ -182,6 +200,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/hill-desktop.webp 1x, img/hill-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/hill-tablet.webp 1x, img/hill-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/hill.webp 1x, img/hill@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/hill-desktop.jpg 1x, img/hill-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/hill-tablet.jpg 1x, img/hill-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/hill.jpg" srcset="img/hill@2x.jpg 2x" width="300" height="180" alt="Фотография скалы">
@@ -201,6 +222,9 @@
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/sunrise-desktop.webp 1x, img/sunrise-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/sunrise-tablet.webp 1x, img/sunrise-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/sunrise.webp 1x, img/sunrise@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/sunrise-desktop.jpg 1x, img/sunrise-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/sunrise-tablet.jpg 1x, img/sunrise-tablet@2x.jpg 2x">
                 <img class="photos-list__picture" src="img/sunrise.jpg" srcset="img/sunrise@2x.jpg 2x" width="300" height="180" alt="Фотография крыла самолета на фоне рассвета">
@@ -225,6 +249,8 @@
           <div class="editor-form__image-wrapper">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-to-post-tablet.webp 1x, img/photo-to-post-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-to-post.webp 1x, img/photo-to-post@2x.webp 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-to-post-tablet.jpg 1x, img/photo-to-post-tablet@2x.jpg 2x">
                 <img src="img/photo-to-post.jpg" srcset="img/photo-to-post.jpg 2x" width="300" height="374" alt="Фотография для публикации">
               </picture>
@@ -256,36 +282,36 @@
           <div class="editor-form__controls">
             <div class="editor-form__wrapper editor-form__wrapper--crop">
               <label for="crop" class="editor-form__label">
-                <p class="visually-hidden">Кнопка обрезки</p>
+                <span class="visually-hidden">Кнопка обрезки</span>
                 <svg class="editor-form__icon editor-form__icon--crop" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 14H18V6C18 5.46957 17.7893 4.96086 17.4142 4.58579C17.0391 4.21071 16.5304 4 16 4H8V6H16V14ZM6 16V0H4V4H0V6H4V16C4 16.5304 4.21071 17.0391 4.58579 17.4142C4.96086 17.7893 5.46957 18 6 18H16V22H18V18H22V16H6Z" fill="#D22856"/>
                 </svg>
               </label>
-              <input class="visually-hidden" type="number" name="crop" value="">
+              <input class="visually-hidden" type="number" id="crop" value="10">
               <div class="editor-form__range"></div>
               <div class="editor-form__toggle"></div>
             </div>
             <div class="editor-form__wrapper editor-form__wrapper--fill">
               <label for="fill" class="editor-form__label">
-                <p class="visually-hidden">Кнопка заливки</p>
+                <span class="visually-hidden">Кнопка заливки</span>
                 <svg class="editor-form__icon editor-form__icon--fill" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.56 9.14791L7.62 0L6.205 1.44791L8.585 3.88326L3.44 9.14791C3.1591 9.4357 3.00132 9.82581 3.00132 10.2326C3.00132 10.6393 3.1591 11.0294 3.44 11.3172L8.94 16.9451C9.22125 17.2325 9.6025 17.394 10 17.394C10.3975 17.394 10.7787 17.2325 11.06 16.9451L16.56 11.3172C16.8409 11.0294 16.9987 10.6393 16.9987 10.2326C16.9987 9.82581 16.8409 9.4357 16.56 9.14791ZM5.205 10.2326L10 5.33116L14.795 10.2326H5.205ZM19 11.7674C19 11.7674 17 13.9828 17 15.3488C17 15.8916 17.2107 16.4121 17.5858 16.7959C17.9609 17.1797 18.4696 17.3953 19 17.3953C19.5304 17.3953 20.0391 17.1797 20.4142 16.7959C20.7893 16.4121 21 15.8916 21 15.3488C21 13.9828 19 11.7674 19 11.7674Z" fill="#D22856"/>
                   <path d="M24 20.4651H0V22H24V20.4651Z" fill="#D22856"/>
                 </svg>
               </label>
-              <input class="visually-hidden" type="number" name="fill" value="">
+              <input class="visually-hidden" type="number" id="fill" value="10">
               <div class="editor-form__range"></div>
               <div class="editor-form__toggle"></div>
             </div>
             <div class="editor-form__wrapper editor-form__wrapper--contrast">
               <label for="contrast" class="editor-form__label">
-                <p class="visually-hidden">Кнопка контрастности</p>
+                <span class="visually-hidden">Кнопка контрастности</span>
                 <svg class="editor-form__icon editor-form__icon--contrast" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z" fill="#D22856"/>
                   <path d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645" fill="#D22856"/>
                 </svg>
               </label>
-              <input class="visually-hidden" type="number" name="contrast" value="">
+              <input class="visually-hidden" type="number" id="contrast" value="10">
               <div class="editor-form__range"></div>
               <div class="editor-form__toggle"></div>
             </div>
@@ -303,7 +329,7 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491 59.0184 28.1815 58.98 28.4078C58.9417 28.6341 58.849 28.8472 58.7102 29.0284C58.5715 29.2096 58.3909 29.3532 58.1845 29.4465C57.978 29.5398 57.7522 29.58 57.5268 29.5635H53.5201C52.8298 35.3747 47.9494 39.8784 42.0315 39.8784C36.1136 39.8784 31.2332 35.3747 30.543 29.5635H28.5778C27.8869 35.442 22.9527 40 16.9685 40C10.9742 40 6.0335 35.4266 5.35571 29.5337H1.45014C1.22961 29.5445 1.00974 29.5014 0.808914 29.4082C0.608085 29.315 0.432119 29.1743 0.295711 28.9979C0.159304 28.8214 0.0664152 28.6144 0.0248022 28.3941C-0.0168108 28.1737 -0.00593994 27.9464 0.0565069 27.7312L5.10477 6.58616C5.45562 4.25872 7.63865 0 13.4861 0C13.8738 0 14.2456 0.156518 14.5197 0.435122C14.7939 0.713727 14.9479 1.0916 14.9479 1.4856C14.9479 1.87961 14.7939 2.25748 14.5197 2.53608C14.2456 2.81468 13.8738 2.9712 13.4861 2.9712C8.7789 2.9712 8.04797 6.6654 7.9895 7.07146L3.3408 26.6022H5.37467C6.12089 20.7847 11.0272 16.2918 16.9685 16.2918C22.9066 16.2918 27.8107 20.7798 28.5611 26.5926L30.5587 26.6017C31.3043 20.8518 36.1567 16.4134 42.0315 16.4134C47.9178 16.4134 52.7776 20.8691 53.5086 26.6353V26.5824H55.6459L51.007 7.07146C50.9387 6.6654 50.237 2.9712 45.5104 2.9712C45.1227 2.9712 44.7509 2.81468 44.4767 2.53608C44.2026 2.25748 44.0485 1.87961 44.0485 1.4856C44.0485 1.0916 44.2026 0.713727 44.4767 0.435122C44.7509 0.156518 45.1227 0 45.5104 0C51.3578 0 53.5408 4.25872 53.8917 6.58616ZM25.6722 29.5635C25.7448 29.1018 25.7825 28.6283 25.7825 28.1459C25.7825 27.6164 25.7371 27.0977 25.65 26.5935C24.9252 22.3982 21.3141 19.2097 16.9685 19.2097C12.6203 19.2097 9.00753 22.402 8.28571 26.601C8.19945 27.1028 8.15447 27.619 8.15447 28.1459C8.15447 28.6205 8.19096 29.0864 8.26125 29.541C8.92191 33.8136 12.5687 37.0821 16.9685 37.0821C21.3605 37.0821 25.0023 33.8251 25.6722 29.5635ZM50.6138 29.5635C50.6874 29.102 50.7256 28.6285 50.7256 28.1459C50.7256 23.2777 46.8331 19.3313 42.0315 19.3313C37.2299 19.3313 33.3374 23.2777 33.3374 28.1459C33.3374 28.6285 33.3756 29.102 33.4492 29.5635C34.118 33.7577 37.7058 36.9605 42.0315 36.9605C46.3572 36.9605 49.945 33.7577 50.6138 29.5635Z" fill="#D22856"/>
         </svg>
         <svg class="page-footer__logo" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/logo-sprite.svg#pink-footer">
+          <use xlink:href="img/logo-sprite.svg#pink-footer"></use>
         </svg>
         <svg class="page-footer__logo-fancy" width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M72.1933 18.4249C72.1932 18.0921 72.3255 17.7725 72.562 17.5345C72.7985 17.2965 73.1204 17.1589 73.4588 17.1511H80.6703C85.7826 17.1511 89.1473 19.827 89.1473 24.211V24.2703C89.1473 29.069 85.0695 31.5573 80.2484 31.5573H74.7544V38.2913C74.7702 38.466 74.7488 38.642 74.6916 38.8082C74.6344 38.9743 74.5426 39.1269 74.4222 39.2563C74.3017 39.3856 74.1552 39.489 73.992 39.5596C73.8287 39.6303 73.6522 39.6668 73.4738 39.6668C73.2954 39.6668 73.119 39.6303 72.9557 39.5596C72.7925 39.489 72.6459 39.3856 72.5255 39.2563C72.405 39.1269 72.3133 38.9743 72.2561 38.8082C72.1989 38.642 72.1775 38.466 72.1933 38.2913V18.4249ZM80.3489 29.2863C84.0952 29.2863 86.556 27.3115 86.556 24.3493V24.29C86.556 21.1106 84.1354 19.4616 80.5297 19.4616H74.8047V29.2468L80.3489 29.2863Z" fill="#283645"/>
@@ -353,6 +379,6 @@
         </a>
       </p>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

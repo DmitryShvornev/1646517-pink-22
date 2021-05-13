@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("postcss-csso");
+const terser = require("gulp-terser");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -20,6 +21,10 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
@@ -30,6 +35,20 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/app.js")
+  .pipe(gulp.dest("build/js"))
+  .pipe(terser())
+  .pipe(rename("app.min.js"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(sync.stream())
+}
+
+exports.scripts = scripts;
+
 
 // Images
 
@@ -87,6 +106,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/*.js", gulp.series("scripts"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -119,6 +139,7 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  scripts,
   sprite,
   images,
   createWebp
