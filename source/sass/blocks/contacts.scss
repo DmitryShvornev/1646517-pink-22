@@ -1,16 +1,20 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: 43px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: $tablet-width;
+    padding-top: 10px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: $desktop-width;
+    padding-bottom: 8px;
   }
 }
 
@@ -41,16 +45,18 @@
   line-height: 25px;
   color: $darkblue;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    margin-top: 51px;
+    margin-top: 32px;
+    padding-left: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    margin-top: 61px;
+    margin-top: 39px;
+    padding-left: 159px;
   }
 }
 
@@ -69,6 +75,11 @@
     opacity: 0.3;
     text-decoration: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 19px;
+  }
 }
 
 .contacts__email {
@@ -77,16 +88,18 @@
   line-height: 25px;
   color: $darkblue;
   margin: 0;
-  margin-top: 31px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-    margin-top: 51px;
+    margin-top: 31px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / -1;
-    margin-top: 61px;
+    margin-top: 39px;
+    padding-right: 159px;
   }
 }
 
@@ -96,16 +109,16 @@
   line-height: 25px;
   color: $darkblue;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 21px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    margin-top: 55px;
+    margin-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-top: 61px;
+    margin-top: 39px;
   }
 }
