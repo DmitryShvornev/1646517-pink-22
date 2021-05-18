@@ -344,6 +344,7 @@
 
   &--emotions {
     padding-left: 0;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
