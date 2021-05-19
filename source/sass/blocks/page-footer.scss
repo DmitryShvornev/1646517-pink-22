@@ -180,9 +180,22 @@
   }
 }
 
+.page-footer__map-image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    width: 100%;
+  }
+}
+
 .page-footer__map-display {
   width: 100%;
   height: 200px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     height: 374px;
