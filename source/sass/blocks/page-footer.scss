@@ -67,11 +67,15 @@
 }
 
 .page-footer--special .copyright {
-  padding-top: 18px;
+  padding-top: 30px;
 }
 
 .page-footer--special .page-footer__logo-container {
-  padding-top: 18px;
+  padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
 }
 
 .page-footer__logo-container {
