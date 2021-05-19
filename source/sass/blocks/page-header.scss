@@ -17,6 +17,10 @@
 
 .page-header--no-js {
   background-color: $darkblue;
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__logo {
