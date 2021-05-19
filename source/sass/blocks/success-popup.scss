@@ -4,9 +4,9 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
   padding-top: 41px;
-  position: absolute;
+  position: fixed;
   background-color: $white;
-  top: 1378px;
+  top: 110px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -17,8 +17,6 @@
   @media (min-width: $desktop-width) {
     width: 780px;
     left: 50%;
-    transform: translateX(-50%);
-    top: 1278px;
   }
 }
 

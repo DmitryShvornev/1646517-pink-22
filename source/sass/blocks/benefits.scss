@@ -24,7 +24,7 @@
 
 .benefits__list {
   @include list-reset;
-  padding-top: 110px;
+  padding-top: 112px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -47,7 +47,7 @@
 
 .benefits__item {
   &--mood {
-    padding-bottom: 21px;
+    padding-bottom: 19px;
   }
 
   &--world {
@@ -133,8 +133,18 @@
     font-size: 18px;
     line-height: 30px;
     padding-right: 0;
-    width: 252px;
+    width: 248px;
     margin-left: 23px;
+  }
+}
+
+.benefits__description-newline-first {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

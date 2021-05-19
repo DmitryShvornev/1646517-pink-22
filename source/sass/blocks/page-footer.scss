@@ -7,7 +7,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,12 +58,20 @@
 
 .page-footer--special {
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 37px;
   }
+}
+
+.page-footer--special .copyright {
+  padding-top: 18px;
+}
+
+.page-footer--special .page-footer__logo-container {
+  padding-top: 18px;
 }
 
 .page-footer__logo-container {
@@ -131,7 +139,7 @@
   align-items: center;
   gap: 14px;
   margin: 0;
-  padding-top: 37px;
+  padding-top: 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 21px;

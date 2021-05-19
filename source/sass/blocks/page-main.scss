@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 93px;
+    padding-bottom: 91px;
   }
 }
 
@@ -95,8 +95,8 @@
 
 .page-main__title--catalog {
   @media (min-width: $desktop-width) {
-    padding-left: 251px;
-    padding-right: 251px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
 
@@ -126,7 +126,7 @@
 
   &--form {
     padding-top: 45px;
-    padding-bottom: 36px;
+    padding-bottom: 37px;
 
     @media (min-width: $tablet-width) {
       padding-top: 89px;
@@ -136,7 +136,7 @@
   }
 
   &--editor {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 42px;
 
     @media (min-width: $tablet-width) {
@@ -153,7 +153,8 @@
 
 .page-main__lead--catalog {
   width: 280px;
-  padding-top: 42px;
+  padding-top: 44px;
+  padding-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     padding-top: 91px;
@@ -169,7 +170,7 @@
     width: 572px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 85px;
+    padding-bottom: 89px;
   }
 }
 

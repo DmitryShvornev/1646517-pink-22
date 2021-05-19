@@ -87,7 +87,7 @@
 
 .form__user-info--emotions {
   box-sizing: border-box;
-  margin-top: 34px;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     order: 4;
@@ -234,12 +234,12 @@
 .form__achievements {
   @include fieldset-reset;
   background-color: $lightgrey;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 42px;
   box-sizing: border-box;
 
   @include wrapper;
-  padding-left: 52px;
+  padding-left: 51px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -285,7 +285,7 @@
 .form__application-versions {
   @include fieldset-reset;
   background-color: $lightgrey;
-  padding-top: 42px;
+  padding-top: 40px;
   padding-left: 20px;
   box-sizing: border-box;
 
@@ -315,7 +315,7 @@
 
 .form__application-versions-list {
   @include list-reset;
-  padding-top: 37px;
+  padding-top: 39px;
   padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
@@ -336,7 +336,7 @@
   color: $pink;
   text-transform: uppercase;
   text-align: left;
-  padding-left: 23px;
+  padding-left: 22px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -356,8 +356,8 @@
   border: 2px solid $special-lightgrey;
   border-radius: 1px;
   font-family: inherit;
-  padding-left: 20px;
-  padding-top: 23px;
+  padding-left: 19px;
+  padding-top: 24px;
   padding-bottom: 23px;
   margin-top: 7px;
   outline: none;
@@ -394,7 +394,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-top: 14px;
+  padding-top: 17px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {

@@ -28,7 +28,7 @@
     margin: 0 auto;
     padding-left: 130px;
     padding-right: 130px;
-    padding-top: 77px;
+    padding-top: 79px;
     padding-bottom: 115px;
     background-image: url("../img/timer-desktop.svg");
     background-repeat: no-repeat;
@@ -44,9 +44,10 @@
   padding-right: 30px;
 
   @media (min-width: $desktop-width) {
-    width: 534px;
-    padding-top: 12px;
-    padding-left: 130px;
+    width: 734px;
+    padding-top: 10px;
+    padding-left: 132px;
+    padding-right: 75px;
   }
 }
 
@@ -63,6 +64,12 @@
   }
 }
 
+.research__promo-newline {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .research__text {
   font-weight: 400;
   font-size: 14px;
@@ -75,8 +82,21 @@
     font-size: 18px;
     line-height: 30px;
     padding-top: 22px;
-    padding-bottom: 31px;
-    width: 534px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.research__text-newline-first {
+  @media (max-width: $no-desktop) {
+    display: none;
+  }
+}
+
+.research__text-newline-second {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
