@@ -6,12 +6,16 @@
   align-items: center;
 
   &--rates {
+    padding-top: 30px;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
   &--reviews {
+    padding-top: 22px;
+
     @media (min-width: $desktop-width) {
       display: none;
     }

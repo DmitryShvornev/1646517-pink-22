@@ -1,16 +1,16 @@
 .promo {
-  padding-top: 46px;
+  padding-top: 42px;
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    padding-top: 49px;
     width: 588px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 75px;
-    padding-bottom: 66px;
+    padding-top: 66px;
+    padding-bottom: 55px;
     width: 780px;
   }
 }
@@ -37,7 +37,7 @@
   font-size: 24px;
   line-height: 120%;
   margin: 0;
-  margin-top: 38px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

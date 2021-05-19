@@ -17,30 +17,47 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 133px;
-    background-image: linear-gradient(175deg, $white 50%, $lightgrey 50%);
+    height: 96px;
+    background-image: linear-gradient(176deg, $white 50%, $lightgrey 50%);
   }
 }
 
 .benefits__list {
   @include list-reset;
-  padding-top: 123px;
+  padding-top: 112px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
+    text-align: left;
+    padding-top: 105px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    gap: 21px;
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
     padding-left: 130px;
     padding-right: 130px;
+    padding-top: 0;
   }
 }
 
 .benefits__item {
+  &--mood {
+    padding-bottom: 19px;
+  }
+
+  &--world {
+    padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 20px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
@@ -49,7 +66,6 @@
 .benefits__item-wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
-    background-color: $lightgrey;
     width: 300px;
     padding-top: 290px;
     background-size: 294px;
@@ -90,13 +106,15 @@
   font-size: 18px;
   line-height: 133%;
   font-weight: 700;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     width: 240px;
     margin: 0 auto;
-    padding-top: 59px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 67px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 5px;
   }
 }
 
@@ -105,6 +123,29 @@
   line-height: 171%;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 0;
+    width: 248px;
+    margin-left: 23px;
+  }
+}
+
+.benefits__description-newline-first {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .benefits__image-wrapper {
@@ -120,7 +161,12 @@
 }
 
 .benefits__image {
-  padding-top: 48px;
-  margin-bottom: -65px;
+  padding-top: 33px;
+  margin-bottom: -55px;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    margin-bottom: -69px;
+  }
 }

@@ -24,18 +24,18 @@
     flex-direction: column;
     align-items: center;
     background-color: $darkblue;
-    padding-top: 28px;
-    padding-bottom: 38px;
+    padding-top: 26px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding-bottom: 119px;
+    padding-bottom: 116px;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
-    padding-bottom: 130px;
+    padding-bottom: 122px;
   }
 }
 
@@ -57,13 +57,18 @@
   margin-bottom: -5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: -361px;
+    width: 660px;
+    height: 545px;
+    margin-bottom: -354px;
     margin-top: -184px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -372px;
-    margin-top: -481px;
+    width: 1050px;
+    height: 645px;
+    margin-bottom: -410px;
+    margin-top: -455px;
+    margin-left: 69px;
   }
 }
 
@@ -73,21 +78,23 @@
   font-size: 24px;
   line-height: 120%;
   margin-top: 70px;
-  padding-top: 29px;
+  padding-top: 25px;
   width: 280px;
   margin-bottom: 0;
-  padding-bottom: 34px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 102px;
+    padding-top: 94px;
+    padding-left: 56px;
     margin-top: 115px;
-    padding-bottom: 39px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 116px;
+    padding-top: 101px;
     margin-top: 115px;
-    padding-bottom: 51px;
+    padding-bottom: 11px;
+    padding-left: 4px;
   }
 }
 
@@ -97,6 +104,19 @@
   line-height: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .application__button-download {
@@ -106,8 +126,8 @@
   font-size: 18px;
   line-height: 100%;
   font-weight: 700;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 15px;
   width: 280px;
   border: 3px solid $white;
   border-radius: 29px;
@@ -129,6 +149,14 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 18px;
+    padding-bottom: 16px;
+    margin-bottom: 73px;
   }
 }
 
@@ -144,7 +172,7 @@
   .application__slogan {
     font-size: 40px;
     line-height: 48px;
-    width: 280px;
+    width: 240px;
   }
 }
 

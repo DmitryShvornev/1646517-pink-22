@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 620px;
-    margin: 0 auto;
+    width: 662px;
+    margin-left: 128px;
   }
 }
 
@@ -21,8 +21,6 @@
   padding-top: 25px;
   padding-bottom: 25px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: $desktop-width) {
     text-transform: capitalize;
@@ -35,9 +33,13 @@
       top: 32px;
       left: 50%;
       transform: translateX(-50%);
-      width: 109px;
+      width: 70px;
       height: 2px;
       background-color: $white;
+    }
+
+    &:last-child {
+      text-align: right;
     }
   }
 }

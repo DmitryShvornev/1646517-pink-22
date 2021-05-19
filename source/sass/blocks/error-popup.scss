@@ -3,8 +3,13 @@
   margin: 0 auto;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
-  padding-top: 49px;
+  padding-top: 47px;
   padding-bottom: 54px;
+  position: fixed;
+  background-color: $white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -27,6 +32,8 @@
   padding-left: 120px;
   padding-right: 120px;
   margin: 0;
+  font-size: 30px;
+  line-height: 40px;
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
@@ -35,15 +42,18 @@
 }
 
 .error-popup__text {
-  padding-top: 37px;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
   margin: 0;
+  font-size: 18px;
+  line-height: 24px;
 
   @media (min-width: $desktop-width) {
-    padding-left: 215px;
-    padding-right: 215px;
+    padding-left: 216px;
+    padding-right: 214px;
     margin-bottom: 68px;
+    padding-top: 23px;
   }
 }
 
@@ -57,13 +67,13 @@
   font-weight: 700;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 23px 134px;
+  padding: 13px 134px;
   width: 296px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 52px;
+    margin-top: 47px;
   }
 
   &:hover {

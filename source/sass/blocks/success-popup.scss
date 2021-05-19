@@ -3,7 +3,12 @@
   margin: 0 auto;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
-  padding-top: 49px;
+  padding-top: 41px;
+  position: fixed;
+  background-color: $white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -11,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 780px;
+    left: 50%;
   }
 }
 
@@ -19,17 +25,24 @@
   padding-left: 32px;
   padding-right: 32px;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 40px;
 
   @media (min-width: $desktop-width) {
     width: 396px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .success-popup__text {
-  padding-left: 41px;
-  padding-right: 41px;
-  margin-bottom: 35px;
+  padding-left: 66px;
+  padding-right: 66px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 24px;
 
   @media (min-width: $desktop-width) {
     padding-left: 201px;
@@ -52,13 +65,14 @@
   font-weight: 700;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 23px 72px;
-  width: 297px;
+  padding: 16px 72px;
+  width: 296px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 47px;
 
   @media (min-width: $desktop-width) {
-    width: 495px;
+    margin-top: 56px;
+    width: 456px;
   }
 
   &:hover {
